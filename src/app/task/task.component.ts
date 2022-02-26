@@ -8,11 +8,15 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./task.component.css']
 })
 export class TaskComponent implements OnInit {
-  public body: string;
+  public taskBody: string;
 
-  submit(form: any) {
-    
-
+  createTask(): any {
+    const newTask = {
+      description: this.taskBody
+    };
+    this.taskService.createTask(newTask).subscribe(response => {
+      this.Tasks = [...this.Tasks, response];
+    }, err => console.log(err));
   }
 
   constructor() {}

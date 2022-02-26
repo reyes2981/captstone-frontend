@@ -1,8 +1,7 @@
 <div>
-    <form #form="ngForm" (ngSubmit)="submit(form.value)">
+    <form (submit)="createTask()">
         <h4>Task</h4>
-        <textarea type="text" name="body" rows="4" cols="50" maxlength="200" placeholder="Enter task here..." ngModel required></textarea>
-        <br>
+        <input [(ngModel)]="taskBody" name="taskBody" type="text" placeholder="description" rows="4" cols="50" /> <br>
         <input type="submit" value="Submit" />
 
     </form>
