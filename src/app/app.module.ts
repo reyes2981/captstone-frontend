@@ -7,6 +7,7 @@ import { UserComponent } from './user/user.component';
 import { UsersComponent } from './users/users.component';
 import { NavComponent } from './nav/nav.component';
 import { TaskComponent } from './task/task.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,9 +19,12 @@ import { TaskComponent } from './task/task.component';
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+  
+}
