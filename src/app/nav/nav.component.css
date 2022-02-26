@@ -1,0 +1,14 @@
+#nav-bar {
+    background-color: #166088;
+    padding-top: 14px;
+    font-size: 24px;
+    height: 60px;
+}
+
+a {
+    text-decoration: none;
+    position: relative;
+    left: 100px;
+    color: #C0D6DF;
+    padding: 14px 16px;
+}

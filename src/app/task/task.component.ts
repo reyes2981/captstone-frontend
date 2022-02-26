@@ -8,24 +8,14 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./task.component.css']
 })
 export class TaskComponent implements OnInit {
-  task: any;
+  public body: string;
 
   submit(form: any) {
-    console.log(form)
-    form.id = this.task.posts.length + 1
-    this.task.posts.push(form);
-    console.log(this.task.posts)
+    
 
   }
 
-  constructor(private route: ActivatedRoute, private http: HttpClient, private router: Router
-  ) {
-    this.router.routeReuseStrategy.shouldReuseRoute = () => false;
-
-    // route.params.subscribe(val => {
-    //   this.findWeather(this.city.name || '', this.city.country || '')    
-    // })
-  }
+  constructor() {}
 
   ngOnInit(): void {
   }
