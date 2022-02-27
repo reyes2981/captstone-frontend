@@ -9,6 +9,7 @@ import { NavComponent } from './nav/nav.component';
 import { TaskComponent } from './task/task.component';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
+import { TimerComponent } from './timer/timer.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { AppRoutingModule } from './app-routing.module';
     UserComponent,
     UsersComponent,
     NavComponent,
-    TaskComponent
+    TaskComponent,
+    TimerComponent
   ],
   imports: [
     BrowserModule,
