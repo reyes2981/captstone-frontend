@@ -1,7 +1,7 @@
 <div>
-    <form #addForm="ngForm" (ngSubmit)="onAddTask(addForm)">
+    <form #addForm="ngForm" (ngSubmit)="onAddTask(addForm.value)">
         <h4>New Task</h4>
-        <textarea ngModel name="taskBody" type="text" placeholder="Enter task here..." rows="4" cols="50"></textarea>
+        <textarea name="taskBody" type="text" placeholder="Enter task here..." rows="4" cols="50" ngModel required></textarea>
         <br>
         <br>
         <input type="submit" value="Submit" />
