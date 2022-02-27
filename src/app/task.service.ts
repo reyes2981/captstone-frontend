@@ -15,7 +15,7 @@ export class TaskService {
   constructor(private http: HttpClient) { }
 
   public addTask(task: Task): Observable<Task> {
-    return this.http.post<Task>(`${this.apiServerUrl}/task/add`, task);
+    return this.http.post<Task>(`${this.apiServerUrl}/task/save`, task);
   }
 
   public getTasks(): Observable<Task[]> {

@@ -12,9 +12,9 @@ import { Task } from '../task';
 })
 export class TaskComponent implements OnInit {
 
-public tasks: Task[];
+  public tasks: Task[];
 
-  constructor(private taskService: TaskService) {}
+  constructor(private taskService: TaskService) { }
 
   public getTasks(): void {
     this.taskService.getTasks().subscribe(
@@ -28,11 +28,14 @@ public tasks: Task[];
     );
   }
 
-  public onAddTask(addForm: NgForm): void {
-    this.taskService.addTask(addForm.value).subscribe(
+  public onAddTask(addForm: any): void {
+    this.taskService.addTask(addForm).subscribe(
       (response: Task) => {
         console.log(response);
         this.getTasks();
+      },
+      (error: HttpErrorResponse) => {
+        alert(error.message);
       }
     )
   }

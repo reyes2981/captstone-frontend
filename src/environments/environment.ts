@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiBaseUrl: 'http://localhost:9092/task/save'
+  apiBaseUrl: 'http://localhost:9092'
 };
 
 /*
