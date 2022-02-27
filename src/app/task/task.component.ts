@@ -10,6 +10,7 @@ import { Task } from '../task';
   templateUrl: './task.component.html',
   styleUrls: ['./task.component.css']
 })
+
 export class TaskComponent implements OnInit {
 
   public tasks: Task[];

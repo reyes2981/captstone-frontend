@@ -2,7 +2,12 @@
 <div>
     <form #addForm="ngForm" (ngSubmit)="onAddTask(addForm.value)">
         <h4>New Task</h4>
-        <textarea ngModel required name="taskBody" type="text" placeholder="Enter task here..." rows="4" cols="50"></textarea>
+        <textarea name="body" type="text" placeholder="Enter task here..." rows="4" cols="50" ngModel required></textarea>
+        <br>
+        <label>
+            <span>Completed</span>
+            <input type="checkbox" name="task" value="complete" ngModel required />
+          </label>
         <br>
         <br>
         <input type="submit" value="Submit" />
