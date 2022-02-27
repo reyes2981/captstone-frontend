@@ -18,7 +18,7 @@ export class TimerComponent implements OnInit, OnDestroy {
     SecondsInAMinute  = 60;
 
     public timeDifference: number;
-    public secondsToDday: number;
+    public secondsToDday: number; 
     public minutesToDday: number;
     public hoursToDday: number;
     public daysToDday: number;

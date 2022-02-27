@@ -11,10 +11,10 @@ import { Task } from '../task';
   styleUrls: ['./task.component.css']
 })
 export class TaskComponent implements OnInit {
-public taskService: TaskService;
+
 public tasks: Task[];
 
-  constructor() {}
+  constructor(private taskService: TaskService) {}
 
   public getTasks(): void {
     this.taskService.getTasks().subscribe(
