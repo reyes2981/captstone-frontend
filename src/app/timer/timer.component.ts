@@ -20,8 +20,8 @@ export class TimerComponent implements OnInit, OnDestroy {
     public timeDifference: number;
     public secondsToDday: number; 
     public minutesToDday: number;
-    public hoursToDday: number;
-    public daysToDday: number;
+    // public hoursToDday: number;
+    // public daysToDday: number;
 
 
     private getTimeDifference () {
@@ -32,8 +32,8 @@ export class TimerComponent implements OnInit, OnDestroy {
   private allocateTimeUnits (timeDifference: any) {
         this.secondsToDday = Math.floor((timeDifference) / (this.milliSecondsInASecond) % this.SecondsInAMinute);
         this.minutesToDday = Math.floor((timeDifference) / (this.milliSecondsInASecond * this.minutesInAnHour) % this.SecondsInAMinute);
-        this.hoursToDday = Math.floor((timeDifference) / (this.milliSecondsInASecond * this.minutesInAnHour * this.SecondsInAMinute) % this.hoursInADay);
-        this.daysToDday = Math.floor((timeDifference) / (this.milliSecondsInASecond * this.minutesInAnHour * this.SecondsInAMinute * this.hoursInADay));
+        // this.hoursToDday = Math.floor((timeDifference) / (this.milliSecondsInASecond * this.minutesInAnHour * this.SecondsInAMinute) % this.hoursInADay);
+        // this.daysToDday = Math.floor((timeDifference) / (this.milliSecondsInASecond * this.minutesInAnHour * this.SecondsInAMinute * this.hoursInADay));
   }
 
     ngOnInit() {

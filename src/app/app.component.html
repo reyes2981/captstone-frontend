@@ -1,3 +1,11 @@
 <app-nav></app-nav>
-<app-task></app-task>
-<router-outlet></router-outlet>
+<!-- <app-task></app-task> -->
+<div id="create-task" style="float: right;">
+    <button (click)="onClick()">Create Task</button>
+</div>
+
+<div id="comp-render"></div>
+
+<div>
+    <router-outlet></router-outlet>
+</div>

@@ -9,6 +9,9 @@ export class AppComponent {
   title = 'frontend';
 
 
+  public onClick() {
+    
+  }
   
 
 }
