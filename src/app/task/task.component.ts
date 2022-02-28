@@ -15,8 +15,9 @@ export class TaskComponent implements OnInit {
 
   public tasks: Task[];
   task: any;
+  private data:any = []
 
-  constructor(private taskService: TaskService) { }
+  constructor(private taskService: TaskService, private http: HttpClient) { }
 
   public getTasks(): void {
     this.taskService.getTasks().subscribe(
@@ -28,6 +29,14 @@ export class TaskComponent implements OnInit {
         alert(error.message);
       }
     );
+  }
+
+  getData(){
+    const url ='http://localhost:9092/task/list'
+    this.http.get(url).subscribe((res)=>{
+      this.data = res
+      console.log(this.data)
+    })
   }
 
   public onAddTask(addForm: any): void {
@@ -44,6 +53,7 @@ export class TaskComponent implements OnInit {
 
 
   ngOnInit(): void {
+
   }
 
 }

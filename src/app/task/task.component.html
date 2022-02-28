@@ -10,13 +10,13 @@
           </label>
         <br>
         <br>
-        <input type="submit" value="Submit" />
+        <input type="submit" value="Submit" (click)="getData()" />
     </form>
 </div>
 
-<div *ngFor="let post of task.body; index as i">
+<div *ngFor="let task of tasks">
     <div>
-        <h1><a routerLink="/task/{{task.id}}/find/{{i}}">{{post.body}}</a></h1>
+        <h1>{{task.body}}</h1>
 
     </div>
 </div>
