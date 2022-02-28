@@ -8,10 +8,13 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'frontend';
 
-
+  display = false;
   public onClick() {
+    console.log("clicked");
     
+    this.display = true;
   }
   
 
 }
+
