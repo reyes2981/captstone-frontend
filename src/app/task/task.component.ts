@@ -31,12 +31,9 @@ export class TaskComponent implements OnInit {
     );
   }
 
-  getData(){
-    const url ='http://localhost:9092/task/list'
-    this.http.get(url).subscribe((res)=>{
-      this.data = res
-      console.log(this.data)
-    })
+  display = false;
+  onPress() {
+    this.display = true;
   }
 
   public onAddTask(addForm: any): void {
