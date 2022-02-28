@@ -3,11 +3,6 @@
         <h4>New Task</h4>
         <textarea name="body" type="text" placeholder="Enter task here..." rows="4" cols="50" ngModel required></textarea>
         <br>
-        <label>
-            <span>Completed</span>
-            <input type="checkbox" name="task" value="complete" ngModel required />
-          </label>
-        <br>
         <br>
         <input type="submit" value="Submit" />
     </form>
@@ -19,8 +14,20 @@
 
         <h1>{{task.body}}</h1>
         <button (click)="onPress()">Start Timer</button>
-        <div id="comp-render" *ngIf="display">
+
+        <div>
+            <form #addForm="ngForm" (ngSubmit)="onAddTask(addForm.value)">
+                <h4>How many times did you use the Pomodoro to help you focus on a task?</h4>
+                <input name="numofpomo" type="number" />
+                <br>
+                <br>
+                <input type="submit" value="Submit" />
+            </form>
+        </div>
+        <div id="timer-render" *ngIf="display">
+
             <app-timer></app-timer>
+
         </div>
     </div>
 </div>

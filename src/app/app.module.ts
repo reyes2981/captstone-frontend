@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { TimerComponent } from './timer/timer.component';
 import { CountdownModule } from 'ngx-countdown';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CountdownModule } from 'ngx-countdown';
     UsersComponent,
     NavComponent,
     TaskComponent,
-    TimerComponent
+    TimerComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
