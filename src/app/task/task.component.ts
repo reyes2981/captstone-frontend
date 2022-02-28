@@ -14,6 +14,7 @@ import { Task } from '../task';
 export class TaskComponent implements OnInit {
 
   public tasks: Task[];
+  task: any;
 
   constructor(private taskService: TaskService) { }
 
