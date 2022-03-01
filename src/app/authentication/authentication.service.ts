@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Router } from '@angular/router';
 import { signInData } from '../model/signinData';
 
 @Injectable({
@@ -9,11 +10,12 @@ export class AuthenticationService {
   private readonly mockedUser = new signInData("john123@yahoo.com", "123");
   isAuthenticated = false;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   authenticate(signInData: signInData): boolean {
     if(this.checkCredentials(signInData)) {
       this.isAuthenticated = true;
+      this.router.navigate(['home']);
       return true;
     }
     this.isAuthenticated = false;
