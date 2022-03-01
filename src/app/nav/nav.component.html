@@ -1,3 +1,8 @@
 <nav id="nav-bar" *ngIf="authenticationService.isAuthenticated">
     <a routerLink="/">Enfocado</a>
+
+    <div id="logout">
+        <a (click)="logout()">Logout</a>
+    </div>
+
 </nav>

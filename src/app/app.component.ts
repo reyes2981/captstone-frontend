@@ -8,17 +8,12 @@ import { AuthenticationService } from './authentication/authentication.service';
 })
 export class AppComponent {
   title = 'frontend';
-  display = false;
 
   constructor(public authenticationService: AuthenticationService) {
-    
+
   }
   
-  public onClick() {
-    console.log("clicked");
-    this.display = true;
-  }
-  
+
 
 }
 

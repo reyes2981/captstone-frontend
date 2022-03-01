@@ -9,7 +9,9 @@ import { AuthenticationService } from '../authentication/authentication.service'
 export class NavComponent implements OnInit {
 
   constructor(public authenticationService: AuthenticationService) { }
-
+  logout() {
+    this.authenticationService.logout();
+  }
   ngOnInit(): void {
   }
 
