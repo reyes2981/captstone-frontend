@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { LoginService } from '../login.service';
-import { User } from '../user';
+import { AuthenticationService } from '../authentication/authentication.service';
+import { signInData } from '../model/signinData';
 
 @Component({
   selector: 'app-login',
@@ -10,7 +10,7 @@ import { User } from '../user';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  constructor(authenticationService: AuthenticationService) { }
 
 
   ngOnInit(): void {
@@ -18,6 +18,8 @@ export class LoginComponent implements OnInit {
 
   onSubmit(signInForm: NgForm) {
     console.log(signInForm.value)
+    const signInData = new signInData(signInForm.value.email, signInForm.value.password);
+    this.authenticationService.authenticate(signInData);
   }
 
 }
