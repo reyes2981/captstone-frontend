@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { AuthenticationService } from '../authentication/authentication.service';
+
 import { signInData } from '../model/signinData';
 
 @Component({
@@ -10,7 +11,7 @@ import { signInData } from '../model/signinData';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(authenticationService: AuthenticationService) { }
+  constructor(private authenticationService: AuthenticationService) { }
 
 
   ngOnInit(): void {
@@ -18,8 +19,8 @@ export class LoginComponent implements OnInit {
 
   onSubmit(signInForm: NgForm) {
     console.log(signInForm.value)
-    const signInData = new signInData(signInForm.value.email, signInForm.value.password);
-    this.authenticationService.authenticate(signInData);
+    const signinData = new signInData(signInForm.value.email, signInForm.value.password);
+    this.authenticationService.authenticate(signinData);
   }
 
 }

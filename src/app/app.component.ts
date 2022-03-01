@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AuthenticationService } from './authentication/authentication.service';
 
 @Component({
   selector: 'app-root',
@@ -8,6 +9,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'frontend';
   display = false;
+
+  constructor(public authenticationService: AuthenticationService) {
+    
+  }
   
   public onClick() {
     console.log("clicked");
