@@ -11,6 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { TimerComponent } from './timer/timer.component';
 import { CountdownModule } from 'ngx-countdown';
 import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { RegisterComponent } from './register/register.component';
     NavComponent,
     TaskComponent,
     TimerComponent,
-    RegisterComponent
+    RegisterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
