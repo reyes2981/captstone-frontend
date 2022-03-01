@@ -1,4 +1,4 @@
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { User } from './user';
@@ -7,7 +7,7 @@ import { User } from './user';
   providedIn: 'root'
 })
 export class LoginService {
-  baseUrl = "http://localhost:9092/login";
+  baseUrl = "http://localhost:9092/user/login";
 
   constructor(private http: HttpClient) { }
 
@@ -17,3 +17,6 @@ export class LoginService {
   }
 
 }
+
+
+//issue probably has something to do with duplicates 
