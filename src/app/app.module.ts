@@ -10,7 +10,7 @@ import { TimerComponent } from './timer/timer.component';
 import { CountdownModule } from 'ngx-countdown';
 import { HomeComponent } from './home/home.component';
 import { UserListComponent } from './user-list/user-list.component';
-import { CreateUserComponent } from './create-user/create-user.component';
+import { UpdateUserComponent } from './update-user/update-user.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +20,7 @@ import { CreateUserComponent } from './create-user/create-user.component';
     TimerComponent,
     HomeComponent,
     UserListComponent,
-    CreateUserComponent
+    UpdateUserComponent
   ],
   imports: [
     BrowserModule,
