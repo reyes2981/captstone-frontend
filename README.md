@@ -35,7 +35,7 @@ Before starting a software project, it is essential to determine the tasks to be
 - When a Task a created a timer is also created
 
 ![capstone_wireframe](https://user-images.githubusercontent.com/68618256/156301966-b11336f6-9b05-4d43-993f-4e68050d9d60.png)
-[capstone project.pdf](https://github.com/reyes2981/captstone-frontend/files/8171415/capstone.project.pdf)
+![capstone project](https://user-images.githubusercontent.com/68618256/156410127-4438ff7e-1e45-469b-94f5-092f5d4a8df0.jpeg)
 
 # TODO
 02/23/22
