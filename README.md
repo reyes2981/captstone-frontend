@@ -1,34 +1,27 @@
-# springtech-java-project-2
+# Enfocado
 
 ### Set Up
 1. Create a new DB called [ capstone ] in postgres and connect to it. 
 
     a. \c capstone
 
-### Option1
-
-Be deployed online We recommend Heroku or AWS.
-
-
+### Requirements
 - [X] You must create 2 apps: Everyone must build and deploy an Angular frontend that communicates with a Springboot backend API.
 - [X] Be a complete product.
 - [X] Implement thoughtful user stories
-- [X] Be deployed online We recommend Heroku or AWS.    
+- Be deployed online We recommend Heroku or AWS.    
 
+## Elevator Pitch
+- Program that helps individuals w/ concentration issues focus working on a task utilizing the Pomodoro Technique
 
-ELEVATOR PITCH:
-PROGRAM THAT HELPS INDIVIDUALS W/ CONCENTRATION ISSUES FOCUS WHILE WORKING ON A TASK UTILIZING THE POMODORO TECHNIQUE
-
-WHAT DID I LEARN FROM MY LAST PROJECT?
+## What did I learn from the previous project?
 https://ecomputernotes.com/software-engineering/project-planning
 Before starting a software project, it is essential to determine the tasks to be performed and properly manage allocation of tasks among individuals involved in the software development. Hence, planning is important as it results in effective software development.
 
 
 # The original Plan
-
-PROJECT IDEA
-- This project involved creating a REST API for a task database that allows users to create new tasks via an Angular.js frontend
-- I WANT IT TO HAVE AUTHENTICATION/AUTHORIZATION 
+- This project involves creating a REST API for a task database that allows users to create new tasks via an Angular.js frontend
+- I want it to have authorization/authentication
 - I WANT TO HAVE FUN WITH THIS PROJECT - TRY NOT TO BE SO SERIOUS 
 - Maybe user signs up and then can press button with plays music that will help them concentrate on a task. 
 - How am I going to play the music? Possibly through Youtube?
@@ -67,71 +60,55 @@ PROJECT IDEA
 3. Not a fan of Postman interface - I ended up using Swagger UI
 
 # DEPENDENCIES USED
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter</artifactId>
+    </dependency>
+    
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-data-jpa</artifactId>
+    </dependency>
+    
+    <dependency>
+        <groupId>org.postgresql</groupId>
+        <artifactId>postgresql</artifactId>
+        <scope>runtime</scope>
+    </dependency>
+    
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-devtools</artifactId>
+        <scope>runtime</scope>
+        <optional>true</optional>
+    </dependency>
+    
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-test</artifactId>
+        <scope>test</scope>
+    </dependency>
+    
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-web</artifactId>
+        <version>RELEASE</version>
+        <scope>compile</scope>
+    </dependency>
+    
+    <dependency>
+       <groupId>org.projectlombok</groupId>
+       <artifactId>lombok</artifactId>
+       <scope>provided</scope>
+    </dependency>
 
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
 
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-jpa</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.postgresql</groupId>
-            <artifactId>postgresql</artifactId>
-            <scope>runtime</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-security</artifactId>
-            <version>2.6.3</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-devtools</artifactId>
-            <scope>runtime</scope>
-            <optional>true</optional>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.18.22</version>
-            <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>com.auth0</groupId>
-            <artifactId>java-jwt</artifactId>
-            <version>3.18.3</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.18.22</version>
-            <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-boot-starter</artifactId>
-            <version>3.0.0</version>
-        </dependency>
+    <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-mail -->
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-mail</artifactId>
+        <version>2.6.4</version>
+    </dependency>
 
 ## System Tools Used
 
