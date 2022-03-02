@@ -1,27 +1,142 @@
-# Frontend
+# springtech-java-project-2
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.2.
+### Set Up
+1. Create a new DB called [ capstone ] in postgres and connect to it. 
 
-## Development server
+    a. \c capstone
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Option1
 
-## Code scaffolding
+Be deployed online We recommend Heroku or AWS.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+- [X] You must create 2 apps: Everyone must build and deploy an Angular frontend that communicates with a Springboot backend API.
+- [X] Be a complete product.
+- [X] Implement thoughtful user stories
+- [X] Be deployed online We recommend Heroku or AWS.    
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+ELEVATOR PITCH
+PROGRAM THAT HELPS INDIVIDUALS W/ CONCENTRATION ISSUES FOCUS WHILE WORKING ON A TASK UTILIZING THE POMODORO TECHNIQUE
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+WHAT DID I LEARN FROM MY LAST PROJECT?
+https://ecomputernotes.com/software-engineering/project-planning
+Before starting a software project, it is essential to determine the tasks to be performed and properly manage allocation of tasks among individuals involved in the software development. Hence, planning is important as it results in effective software development.
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+# The original Plan
 
-## Further help
+PROJECT IDEA
+This project involved creating a REST API for a task database that allows users to create new tasks via an Angular.js frontend
+I WANT IT TO HAVE AUTHENTICATION/AUTHORIZATION 
+I WANT TO HAVE FUN WITH THIS PROJECT - TRY NOT TO BE SO SERIOUS 
+Maybe user signs up and then can press button with plays music that will help them concentrate on a task. 
+How am I going to play the music? Possibly through Youtube?
+I'll probably need to look into the Youtube API
+SO FAR I HAVE TWO MODELS
+USERS AND TASKS
+USERS CAN LEAVE COMMENTS ABOUT CURRENT SONG PLAYING 
+IM GOING TO MAKE THE COMMENTS LIVE 
+How many Pomodoros did it take you to complete your task? 
+When a Task a created a timer is also created
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+| Request Type | URL| Functionality | 
+|--|--|--|
+| GET | /categories/getCategories | Get all Categories |
+| POST | /categories/addCategory | Add a Category |
+| POST | /categories/addResourceToCategory | Add a Resource to a Category |
+| DELETE | /categories//categories/{categoryId}/resources/{resourceId}/remove | Remove a Resource from a Category |
+| GET | /categories/getCategory/id | Get a Category |
+| PUT | /categories/editCategory/id | Edit a Category |
+| DELETE | /categories/deleteCategory/id | Remove a Category |
+| GET | /resources/getResources | Get all Resources |
+| POST | /resources/addResource | Add a Resource |
+| GET | /resources/getResource/id | Get a Resource |
+| PUT | /resources/editResource/id | Edit a Resource |
+| DELETE | /resources/deleteResource/id | Remove a Resource |
+| GET | /users/getUsers | Get all Users |
+| POST | /users/saveUser | Add a User |
+| POST | /users/role/addToUser | Add a Role to User |
+| POST | /users/role/save | Add a Role |
+
+# Project Challenges
+
+1. Adding authentication/authorization - Initially, one of my goals, was to add these functionalities using JWT tokens. When I would look for a user in the DB I would get an error that stated the object I was trying to view was null. I did research on Google/StackOverFlow and then asked my classmates on Slack. I was steered in the right direction and attempted to implement UserDetails and UserDetailsService but it was still not working. I decided I would not implement JWT tokens and would instead build out the interface for an admin user. 
+3. Not a fan of Postman interface - I ended up using Swagger UI
+
+# DEPENDENCIES USED
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+            <version>2.6.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <scope>runtime</scope>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.22</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.auth0</groupId>
+            <artifactId>java-jwt</artifactId>
+            <version>3.18.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.22</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-boot-starter</artifactId>
+            <version>3.0.0</version>
+        </dependency>
+
+## System Tools Used
+
+|  |  |
+| --- | :--- |
+| Spring Boot | IntelliJ IDEA/Java 11 and 17 |
+| Apache Maven | Google |
+| Swagger UI | Postgres |
+| Lucid App |
+
