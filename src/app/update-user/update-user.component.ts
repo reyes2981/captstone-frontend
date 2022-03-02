@@ -12,4 +12,8 @@ export class UpdateUserComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onSubmit() {
+    
+  }
+
 }

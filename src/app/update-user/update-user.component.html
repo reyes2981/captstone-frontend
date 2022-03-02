@@ -1,1 +1,17 @@
-<p>update-user works!</p>
+<h3>Update User</h3>
+<div>
+    <div>
+        <form #addForm="ngForm" (ngSubmit)="onSubmit()">
+            <div>
+                <label>Email</label>
+                <input name="email" type="text" id="email" ngModel required>
+            </div>
+            <div>
+                <label>Username</label>
+                <input name="username" type="text" id="username" ngModel required>
+            </div>
+            <br>
+            <br>
+            <input type="submit" value="Submit" />
+        </form>
+    </div>
