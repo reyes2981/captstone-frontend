@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { User } from '../user';
+import { UserService } from '../user.service';
 
 @Component({
   selector: 'app-update-user',
@@ -7,13 +10,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UpdateUserComponent implements OnInit {
 
-  constructor() { }
+  id: number;
+  user: User = new User();
+
+  constructor(private userServicce: UserService, private route: ActivatedRoute,
+    private router: Router) { }
 
   ngOnInit(): void {
+    this.id = this.route.snapshot.params['id']
+    this.userServicce.getUserById(this.id).subscribe(data => {
+      this.user = data;
+    }, error => console.log(error));
   }
 
   onSubmit() {
-    
+
+    this.userServicce.updateUser(this.id, this.user).subscribe( data => {
+      this.goToUserList();
+    }, error => console.log(error))
+  }
+
+  goToUserList() {
+    this.router.navigate(['/users']);
   }
 
 }

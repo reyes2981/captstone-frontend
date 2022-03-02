@@ -14,4 +14,16 @@ export class UserService {
   getUserList(): Observable<User[]>{
     return this.http.get<User[]>(`${this.baseUrl}`)
   }
+
+  getUserById(id: number): Observable<User>{
+    return this.http.get<User>(`${this.baseUrl}/${id}`);
+  }
+
+  updateUser(id: number, user: User): Observable<Object>{
+    return this.http.put(`${this.baseUrl}/${id}`, user);
+  }
+
+  deleteUser(id: number) : Observable<Object>{
+    return this.http.delete(`${this.baseUrl}/${id}`);
+  }
 }

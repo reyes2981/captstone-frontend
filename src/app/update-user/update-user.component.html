@@ -4,11 +4,11 @@
         <form #addForm="ngForm" (ngSubmit)="onSubmit()">
             <div>
                 <label>Email</label>
-                <input name="email" type="text" id="email" ngModel required>
+                <input name="email" type="text" id="email" [(ngModel)]="user.email" required>
             </div>
             <div>
                 <label>Username</label>
-                <input name="username" type="text" id="username" ngModel required>
+                <input name="username" type="text" id="username" [(ngModel)]="user.username" required>
             </div>
             <br>
             <br>
