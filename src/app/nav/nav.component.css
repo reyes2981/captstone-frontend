@@ -1,3 +1,13 @@
+#logo a {
+    font-size: 60px;
+    color: #faa00f;
+    text-decoration: none;
+    font-weight: bolder;
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
 nav {
     list-style-type: none;
     margin: 0;
@@ -18,8 +28,11 @@ nav li a {
     padding: 14px 16px;
     text-decoration: none;
     list-style-type: none;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bold;
+    position: relative;
+    left: 250%;
+    padding: 25px 75px;
 }
 
 li a:hover {
