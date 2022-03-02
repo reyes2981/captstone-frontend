@@ -16,8 +16,16 @@ export class TaskComponent implements OnInit {
   public tasks: Task[];
   task: any;
   private data:any = []
+  cdisplay = false;
+
 
   constructor(private taskService: TaskService, private http: HttpClient) { }
+
+  public onClick() {
+    console.log("clicked");
+    this.cdisplay = true;
+  }
+  
 
   public getTasks(): void {
     this.taskService.getTasks().subscribe(

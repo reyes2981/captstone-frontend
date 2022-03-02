@@ -15,6 +15,39 @@
         <h1>{{task.body}}</h1>
         <button (click)="onPress()">Start Timer</button>
 
+        <div id="timer-render" *ngIf="display">
+            <app-timer></app-timer>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- <div id="create-task" style="float: right;">
+    <button (click)="onClick()">Create Task</button>
+</div>
+
+<div id="task-render" *ngIf="display">
+    <app-task></app-task>
+</div>
+<div>
+    <form #addForm="ngForm" (ngSubmit)="onAddTask(addForm.value)">
+        <h4>New Task</h4>
+        <textarea name="body" type="text" placeholder="Enter task here..." rows="4" cols="50" ngModel required></textarea>
+        <br>
+        <br>
+        <input type="submit" value="Submit" />
+    </form>
+</div>
+
+<div *ngFor="let task of tasks; let i = index; first as isFirst; last as isLast">
+
+    <div *ngIf="isLast">
+
+        <h1>{{task.body}}</h1>
+        <button (click)="onPress()">Start Timer</button>
+
         <div id="task-form">
             <form #addForm="ngForm" (ngSubmit)="onAddTask(addForm.value)">
                 <h4>How many times did you use the Pomodoro to help you focus on a task?</h4>
@@ -23,11 +56,11 @@
                 <br>
                 <input type="submit" value="Submit" />
             </form>
-        </div>
-        <div id="timer-render" *ngIf="display">
+        </div> -->
+    <!-- <div id="timer-render" *ngIf="display">
 
             <app-timer></app-timer>
 
-        </div>
-    </div>
-</div>
+        </div> -->
+    <!-- </div>
+</div>  -->

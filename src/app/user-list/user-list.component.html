@@ -1,0 +1,21 @@
+<h2>Registered Users</h2>
+<table>
+    <thead>
+        <tr>
+            <th> Email </th>
+            <th> Username </th>
+            <th> Actions </th>
+        </tr>
+    </thead>
+</table>
+<tbody>
+    <tr *ngFor="let user of users">
+        <td> {{user.email}} </td>
+        <td> {{user.username}} </td>
+        <td>
+            <button (click)="updateUser(user.id)">Update</button>
+            <button (click)="deleteUser(user.id)">Delete</button>
+
+        </td>
+    </tr>
+</tbody>
