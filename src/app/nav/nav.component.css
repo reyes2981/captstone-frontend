@@ -1,18 +1,27 @@
-#nav-bar {
-    background-color: #84a59d;
-    padding-top: 14px;
-    font-size: 24px;
-    height: 60px;
+nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #F7EDE2;
 }
 
-a {
-    text-decoration: none;
-    position: relative;
-    left: 100px;
-    color: black;
+nav li {
+    float: left;
+    list-style-type: none;
+}
+
+nav li a {
+    display: block;
+    color: #84A59D;
+    text-align: center;
     padding: 14px 16px;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 25px;
+    font-weight: bold;
 }
 
-li {
-    display: inline;
+li a:hover {
+    opacity: 50%;
 }
