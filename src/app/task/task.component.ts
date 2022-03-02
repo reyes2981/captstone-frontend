@@ -4,7 +4,6 @@ import { NgForm } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { TaskService } from '../task.service';
 import { Task } from '../task';
-
 @Component({
   selector: 'app-task',
   templateUrl: './task.component.html',
