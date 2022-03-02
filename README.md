@@ -1,4 +1,5 @@
 # Enfocado
+![pomo](https://user-images.githubusercontent.com/68618256/156303377-ef0eaddd-0cc8-4d4b-88dd-84cbdfeadeb9.png)
 
 ### Set Up
 1. Create a new DB called [ capstone ] in postgres and connect to it. 
@@ -22,14 +23,14 @@ Before starting a software project, it is essential to determine the tasks to be
 # The original Plan
 - This project involves creating a REST API for a task database that allows users to create new tasks via an Angular.js frontend
 - I want it to have authorization/authentication
-- I WANT TO HAVE FUN WITH THIS PROJECT - TRY NOT TO BE SO SERIOUS 
+- I want to have fun with this project - Try not to be so serious.
 - Maybe user signs up and then can press button with plays music that will help them concentrate on a task. 
-- How am I going to play the music? Possibly through Youtube?
+- How am I going to play music? Possibly through Youtube?
 - I'll probably need to look into the Youtube API
-- SO FAR I HAVE TWO MODELS
-- USERS AND TASKS
-- USERS CAN LEAVE COMMENTS ABOUT CURRENT SONG PLAYING 
-- IM GOING TO MAKE THE COMMENTS LIVE 
+- So far I have two models
+- Users and tasks
+- Users can leave comments about current song playing
+- I'm going to make the comments live
 - How many Pomodoros did it take you to complete your task? 
 - When a Task a created a timer is also created
 
@@ -102,21 +103,13 @@ Before starting a software project, it is essential to determine the tasks to be
        <scope>provided</scope>
     </dependency>
 
-
-    <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-mail -->
-    <dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-mail</artifactId>
-        <version>2.6.4</version>
-    </dependency>
-
 ## System Tools Used
 
 |  |  |
 | --- | :--- |
-| Spring Boot | IntelliJ IDEA/Java 11 and 17 |
-| Apache Maven | Google |
-| Swagger UI | Postgres |
+| Spring Boot | Angular |
+| Apache Maven | Bootstrap |
+| Postman | Postgres |
 | Lucid App |
 
 ## Resources
