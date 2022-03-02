@@ -20,7 +20,7 @@ const routes: Routes = [
     component: TaskComponent
   },
   {
-    path: 'update-user',
+    path: 'update-user/:id',
     component: UpdateUserComponent
   },
 
