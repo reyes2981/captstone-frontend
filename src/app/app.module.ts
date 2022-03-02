@@ -12,6 +12,7 @@ import { HomeComponent } from './home/home.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { UpdateUserComponent } from './update-user/update-user.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
+import { NgxYoutubePlayerModule } from 'ngx-youtube-player'
 
 @NgModule({
   declarations: [
@@ -29,7 +30,7 @@ import { UserDetailsComponent } from './user-details/user-details.component';
     HttpClientModule,
     FormsModule,
     AppRoutingModule,
-    CountdownModule
+    CountdownModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

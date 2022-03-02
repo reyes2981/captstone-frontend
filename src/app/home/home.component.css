@@ -1,0 +1,15 @@
+h1 {
+    color: #f39f18;
+}
+
+p {
+    font-size: 30px;
+}
+
+#pomo-img {
+    position: relative;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    left: 11%;
+    opacity: 0.7;
+}
