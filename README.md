@@ -36,6 +36,49 @@ Before starting a software project, it is essential to determine the tasks to be
 
 ![capstone_wireframe](https://user-images.githubusercontent.com/68618256/156301966-b11336f6-9b05-4d43-993f-4e68050d9d60.png)
 
+# TODO
+02/23/22
+- X Build backend 
+- X Build user model
+- X Create DB
+- X Connect backend to DB
+
+02/24/22
+- X Build task class
+- X Connect task class to DB
+- X Create task repo/controller
+- X Create Angular frontend
+- X Create frontend repo in Github
+
+02/25/22
+- X Build user class
+- X Connect user class to DB
+- X Create user repo/controller
+- X Successfully call API from frontend 
+
+02/26/22
+- X Create functionality to create a task on frontend
+- X Build out timer 
+
+02/27/22
+- X Refactor Timer
+- X Register functionality working on both frontend and backend
+
+02/28/22
+- X Complete login functionality - frontend
+- X Display User tasks
+- Maybe task has a one to one relationship to a POMODORO class?
+- I can ask user “how many times did you use the pomodoro on this task?
+
+03/01/22
+- Fix frontend routing
+- Style application with Bootstrap
+
+
+03/02/22
+- Add tests to program
+
+
 | Request Type | URL| Functionality | 
 |--|--|--|
 | GET | /categories/getCategories | Get all Categories |
